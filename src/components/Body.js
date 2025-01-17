@@ -43,14 +43,15 @@ const Body = () => {
   }
 
   const onlineStatus = useOnlineStatus();
-  if(onlineStatus === false) {
-    return(
+  if (onlineStatus === false) {
+    return (
       <div>
-        <h1>Tere me itni chul kyo hai...! 😡</h1>
-        <h1>vapis internet chalu kar 🤬</h1>
+        <h1>Oops! You are offline. 😔</h1>
+        <h1>Please check your internet connection. 🌐</h1>
       </div>
-    )
+    );
   }
+
 
   return filteredRestaurant == [] ? "Loading..." : (
     <div className="body">
